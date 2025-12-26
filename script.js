@@ -81,4 +81,5 @@ function toggleAuth(type) {
         document.getElementById('reg-box').classList.add('active');
         document.getElementById('tab-reg').classList.add('active');
     }
+
 }

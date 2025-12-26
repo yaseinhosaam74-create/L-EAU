@@ -94,4 +94,5 @@ input, select { padding: 15px; border: 1px solid #eee; border-radius: 8px; font-
     display: flex; align-items: center; gap: 15px; padding: 20px;
     background: white; margin-bottom: 10px; border-radius: 10px;
     text-decoration: none; color: var(--text); font-weight: 500;
+
 }

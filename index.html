@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>L'Aura | العطور الفرنسية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">L'AURA</div>
+        <div class="nav-menu">
+            <button onclick="navigateTo('home')"><i class="fas fa-home"></i></button>
+            <button onclick="navigateTo('shop')"><i class="fas fa-shopping-bag"></i></button>
+            <button onclick="navigateTo('contact')"><i class="fas fa-envelope"></i></button>
+            <button onclick="navigateTo('account')"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <section id="home" class="page active">
+        <div class="hero-slider">
+            <div class="slider-wrapper" id="slider-wrapper">
+                </div>
+            <div class="hero-text">
+                <h1>مجموعتنا الفاخرة</h1>
+                <p>إبداع فرنسي ممتد</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop" class="page">
+        <div class="container">
+            <h2 class="page-title">المتجر</h2>
+            <div class="products-grid" id="products-grid"></div>
+        </div>
+    </section>
+
+    <section id="product-details" class="page">
+        <div class="container">
+            <button class="back-btn" onclick="navigateTo('shop')"><i class="fas fa-chevron-right"></i> عودة</button>
+            <div class="details-card">
+                <img id="det-img" src="" alt="">
+                <h2 id="det-title"></h2>
+                <div class="notes-info">
+                    <strong>النوتات العطرية:</strong>
+                    <p id="det-notes"></p>
+                </div>
+                <div class="size-picker">
+                    <button class="size-btn" data-multiplier="0.5">25ml</button>
+                    <button class="size-btn active" data-multiplier="1">50ml</button>
+                    <button class="size-btn" data-multiplier="1.8">100ml</button>
+                    <button class="size-btn" data-multiplier="2.5">150ml</button>
+                    <button class="size-btn" data-multiplier="3">200ml</button>
+                </div>
+                <div class="price-box">السعر: <span id="det-price"></span> ج.م</div>
+                <button class="action-btn">أضف للسلة</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="page">
+        <div class="container">
+            <h2 class="page-title">تواصل معنا</h2>
+            <div class="contact-links">
+                <a href="https://wa.me/yournumber" class="c-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="#" class="c-link"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="c-link"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="mailto:info@laura.com" class="c-link"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="account" class="page">
+        <div class="container">
+            <div class="auth-tabs">
+                <button id="tab-login" class="active" onclick="toggleAuth('login')">دخول</button>
+                <button id="tab-reg" onclick="toggleAuth('reg')">جديد</button>
+            </div>
+            
+            <div id="login-box" class="auth-form active">
+                <input type="text" placeholder="الاسم أو الإيميل">
+                <input type="password" placeholder="كلمة المرور">
+                <button class="action-btn">دخول</button>
+            </div>
+
+            <div id="reg-box" class="auth-form"><input type="text" placeholder="الاسم الكامل">
+                <input type="tel" placeholder="رقم الهاتف">
+                <select id="country">
+                    <option value="EG">🇪🇬 مصر</option>
+                    <option value="SA">🇸🇦 السعودية</option>
+                    <option value="UAE">🇦🇪 الإمارات</option>
+                </select>
+                <input type="number" placeholder="العمر">
+                <input type="password" placeholder="كلمة المرور">
+                <button class="action-btn">إنشاء حساب</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

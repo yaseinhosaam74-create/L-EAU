@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>L'EAU</title>
+    <link rel="icon" tybe="image/png"href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="theme-switch" onclick="toggleTheme()"><i class="fas fa-adjust"></i></div>
+        <div class="logo">L'EAU</div>
+        <div class="cart-icon" onclick="navTo('cart')">
+            <i class="fas fa-shopping-basket"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="home" class="page active">
+            <div class="hero-slider" id="slider-area">
+                <div class="slider-track" id="slider-track">
+                    </div>
+            </div>
+            <div class="hero-title">
+                <h1 id="slider-name"> A Drop Of Purity Of The Soul </h1>
+                <p>Luxurious Scents</p>
+            </div>
+        </section>
+
+        <section id="shop" class="page">
+            <h2 class="section-title">Store </h2>
+            <div class="perfume-grid" id="perfume-grid"></div>
+        </section>
+
+        <section id="product-view" class="page">
+            <div id="product-details-content"></div>
+        </section>
+
+        <section id="cart" class="page">
+            <h2 class="section-title">shopping cart  </h2>
+            <div id="cart-list"></div>
+            <div class="cart-summary" id="cart-summary">
+                <div class="total-line"><span>الإجمالي:</span> <span id="total-price">0</span> ج.م</div>
+                <button class="buy-now-btn" onclick="checkout()">تأكيد الطلب</button>
+            </div>
+        </section>
+
+        <section id="orders" class="page">
+            <h2 class="section-title">سجل طلباتك</h2>
+            <div id="orders-history"></div>
+        </section>
+
+        <section id="account" class="page">
+            <div class="auth-wrapper">
+                <div class="auth-tabs">
+                    <button id="btn-login" class="active" onclick="setAuth('login')">دخول</button>
+                    <button id="btn-reg" onclick="setAuth('reg')">تسجيل</button>
+                </div>
+                <div id="auth-form" class="auth-inputs">
+                    </div>
+            </div>
+        </section>
+<section id="contact" class="page">
+    <div class="container">
+        <h2 class="page-title">تواصل معنا</h2>
+        <div class="contact-links">
+            <a href="https://wa.me/+201121454510" class="c-link"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.facebook.com/share/14QEFKTxoEu/
+
+https://www.instagram.com/_yaseinhsied?igsh=MXJpbGs2ZXdwa2E2" class="c-link"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.facebook.com/share/14QEFKTxoEu/" class="c-link"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="yaseinhosaam74@gmail.com" class="c-link"><i class="fas fa-envelope"></i> Email</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <nav class="bottom-nav">
+        <button onclick="navTo('home')" class="nav-btn active"><i class="fas fa-home"></i></button>
+        <button onclick="navTo('shop')" class="nav-btn"><i class="fas fa-th-large"></i></button>
+        <button onclick="navTo('orders')" class="nav-btn"><i class="fas fa-history"></i></button>
+        <button onclick="navTo('account')" class="nav-btn"><i class="fas fa-user"></i></button>
+        <button onclick="navTo('contact')" class="nav-btn"><i class="fas fa-comment-dots"></i></button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
